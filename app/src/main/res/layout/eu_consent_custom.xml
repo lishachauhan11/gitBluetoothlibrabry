@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eu_consent_white">
+
+    <LinearLayout
+        android:id="@+id/ll_eu_consent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+
+            <ImageView android:id="@+id/eudialog_img_appicon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView android:id="@+id/eudialog_txt_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/eudialog_img_appicon"
+                android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+                android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/eu_consent_material_blue"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <TextView android:id="@+id/eudialog_txt_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/eu_consent_title"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/eu_consent_text_color"
+            android:textAllCaps="false"/>
+
+        <TextView android:id="@+id/eudialog_txt_askcontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/eu_consent_question"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/eu_consent_material_blue"
+            android:textAllCaps="false"/>
+
+        <TextView android:id="@+id/eudialog_txt_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:layout_marginTop="8dp"
+            android:text="@string/eu_consent_text"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/eu_consent_text_color"
+            android:textAllCaps="false"/>
+
+        <RelativeLayout
+            android:id="@+id/eudialog_rel_continue"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:background="@drawable/eu_consent_button_selector">
+
+            <TextView
+                android:id="@+id/eudialog_lbl_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/eu_consent_yes"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/eu_consent_material_blue"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eudialog_rel_irrelevant"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:background="@drawable/eu_consent_button_selector"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/eudialog_lbl_irrelevant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/eu_consent_no"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/eu_consent_material_blue"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eudialog_rel_removeads"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:visibility="gone"
+            android:background="@drawable/eu_consent_button_selector">
+
+            <TextView
+                android:id="@+id/eudialog_lbl_removeads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/action_remove_ads"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/eu_consent_material_blue"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eudialog_rel_exit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:background="@drawable/eu_consent_button_selector"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/eudialog_lbl_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Exit"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="@color/eu_consent_material_blue"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:layout_marginTop="10dp"
+            android:text="@string/eu_consent_change_setting"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView android:id="@+id/eudialog_lbl_learnmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/eu_consent_dialog_margin_left"
+            android:layout_marginRight="@dimen/eu_consent_dialog_margin_right"
+            android:layout_marginTop="10dp"
+            android:text="@string/learn_more"
+            android:textColor="@drawable/eu_consent_dialog_button_text_selector"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</ScrollView>

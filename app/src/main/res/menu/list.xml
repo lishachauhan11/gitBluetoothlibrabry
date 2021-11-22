@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/images"
+        android:icon="@drawable/image"
+        android:title="@string/images"
+        android:checked="true"
+        android:color="@color/white" />
+
+    <item
+        android:id="@+id/videos"
+        android:icon="@drawable/video"
+        android:title="@string/video"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/audios"
+        android:icon="@drawable/audio"
+        android:title="@string/audio"
+        android:color="@color/white"/>
+
+    <item
+        android:id="@+id/apps"
+        android:icon="@drawable/apk"
+        android:title="@string/apps"
+        android:color="@color/white"/>
+    <item
+        android:id="@+id/files"
+        android:icon="@drawable/search"
+        android:title="Files"
+        android:color="@color/white"/>
+</menu>

@@ -1,0 +1,2 @@
+rootProject.name = "git Bluetooth librabry"
+include ':app'

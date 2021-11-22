@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/dialog_conform_main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_conform_header_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/dialog_conform_txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="App Name"
+                android:textColor="@color/dialog_header_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_native_adlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ad_side_margin"
+            android:layout_marginRight="@dimen/ad_side_margin"
+            android:layout_marginBottom="@dimen/ad_side_margin"
+            android:layout_below="@+id/dialog_conform_header_layout"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp" />
+
+            <!--<FrameLayout
+                android:id="@+id/native_ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dialog_conform_message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_native_adlayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/dialog_conform_txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you sure you want to open App in Play Store?"
+                android:textColor="@color/dialog_message_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_lottie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            android:layout_below="@+id/dialog_conform_message_layout"
+            app:lottie_fileName="2080-rating.json"
+            app:lottie_loop="true"/>
+
+        <RelativeLayout
+            android:id="@+id/dialog_conform_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/progress_lottie"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5sp" >
+
+            <Button
+                android:id="@+id/dialog_rate_btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/dialog_button_selector"
+                android:padding="8dp"
+                android:text="Rate Now"
+                android:textAllCaps="false"
+                android:textColor="@drawable/dialog_button_text_selector"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/dialog_conform_btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/dialog_button_selector"
+                android:padding="8dp"
+                android:text="YES"
+                android:textAllCaps="false"
+                android:textColor="@drawable/dialog_button_text_selector"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/dialog_conform_btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/dialog_conform_btn_yes"
+                android:background="@drawable/dialog_button_selector"
+                android:padding="8dp"
+                android:text="NO"
+                android:textAllCaps="false"
+                android:textColor="@drawable/dialog_button_text_selector"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

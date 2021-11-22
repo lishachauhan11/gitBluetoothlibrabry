@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Bluetooth Scanner : Manage, Pair &amp; Share</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_devices">Bluetooth Devices</string>
+    <string name="bluetooth_settings">Bluetooth Settings</string>
+    <string name="bluetooth_search">Bluetooth Search</string>
+    <string name="bluetooth_share">Bluetooth Share</string>
+    <string name="scanner_manager_amp_share"><![CDATA[Scanner,Manager & Share]]></string>
+    <string name="bluetooth_service">Bluetooth Service</string>
+    <string name="bluetooth_service_sub">Turn on bluetooth service for find nearby device &amp; file transfer</string>
+    <string name="turn_on">Turn On</string>
+    <string name="search">Search</string>
+    <string name="devices">Devices</string>
+    <string name="share">Share</string>
+    <string name="discoverable">Discoverable</string>
+    <string name="make_device_discoverable">Make device discoverable</string>
+    <string name="paired">Paired</string>
+    <string name="scan">Scan</string>
+    <string name="strength">Strength</string>
+    <string name="unpair">Unpair</string>
+    <string name="stronger">Stronger</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="weaker">Weaker</string>
+    <string name="find_devices">Find Devices</string>
+    <string name="normal_search">Normal search</string>
+    <string name="for_low_energy_devices">For low energy devices</string>
+    <string name="stop_searching">Stop Searching</string>
+    <string name="start_searching">Start Searching</string>
+    <string name="images">Images</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="apps">Apps</string>
+    <string name="mp3">MP3</string>
+    <string name="select_files">Select Files</string>
+    <string name="do_you_realy_want_to_exit">Do you realy want to exit ?</string>
+    <string name="are_you_sure_you_want_to_go_into_the_bluetooth_settings">Are you sure you want to go into the Bluetooth settings?</string>
+    <string name="go_to_bluetooth_settings">Go to bluetooth settings</string>
+    <string name="unpair_device">Unpair Device</string>
+    <string name="are_you_sure_you_want_to_unpair_the_device">Are you sure you want to unpair the device?</string>
+    <string name="turn_off">Turn Off</string>
+
+    <!--New Ad Code-->
+
+    <string name="admob_app_id">ca-app-pub-3143525559772667~8737171114</string>
+
+    <string name="fb_icon_desc">Ad icon</string>
+    <string name="fb_image_desc">Ad image</string>
+    <string name="fb_sponsored">Sponsored</string>
+
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">we need permission for save your work into <b>Storage</b></string>
+
+    <string name="eu_consent_title">We care about your privacy.We keep this app free by showing ads.</string>
+    <string name="eu_consent_text">You can change your choice anytime for App in the app settings.Our parteners collect data and use a unique identifire on your device to show you ads.</string>
+    <string name="eu_consent_question">Can we continue to use yor data to tailor ads for you?</string>
+
+    <!--<string name="learn_more">Learn how App and our partners collect and userdata</string>-->
+    <string name="learn_more">Privacy Policy\nHow App &amp; our partners uses your data!</string>
+    <string name="google_partners">Google and its partners:</string>
+    <string name="eu_consent_yes">Yes, continue</string>
+    <string name="eu_consent_no">No, see the ads that are less irrelevant</string>
+    <string name="eu_consent_change_setting">You can change this setting anytime in the \"About\" window.</string>
+    <string name="thank_you">Thank you for continue to see relevant ads!</string>
+    <string name="action_remove_ads">Pay for the ad-free version</string>
+
+    <string name="version_code">Version Code</string>
+    <string name="version_name">Version Name</string>
+    <string name="admob_consent">User Consent</string>
+    <string name="share_app">Share App</string>
+    <string name="ad_free">Buy AdFree Version</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="license">License and Credits</string>
+
+    <string name="ad_attribution">Ad</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+</resources>
